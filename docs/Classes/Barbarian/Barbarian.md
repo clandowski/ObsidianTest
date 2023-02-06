@@ -1,9 +1,6 @@
 
 # Contents
 
-
-[[#Table - Barbaric Bonds:]]
-
 -   [[#Class Details:]]
 -   [[#Class Features]]
     -   [[#Weapon and Armor Proficiency]]
