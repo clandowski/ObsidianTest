@@ -12,7 +12,6 @@
     -   [2.6Binder Talent (Su)](https://niched20.miraheze.org/wiki/Classes/Blade_Binder#Binder_Talent_(Su))  
     -   [2.7Ki Pool (Su)](https://niched20.miraheze.org/wiki/Classes/Blade_Binder#Ki_Pool_(Su))
     -   [2.8Blade Improvement (Su)](https://niched20.miraheze.org/wiki/Classes/Blade_Binder#Blade_Improvement_(Su))  
-    -   [2.9Summon Armor (Su)](https://niched20.miraheze.org/wiki/Classes/Blade_Binder#Summon_Armor_(Su))  
     -   [2.10Armor Improvement (Su)](https://niched20.miraheze.org/wiki/Classes/Blade_Binder#Armor_Improvement_(Su))  
     -   [2.11Binder’s Resilience (Ex)](https://niched20.miraheze.org/wiki/Classes/Blade_Binder#Binder%E2%80%99s_Resilience_(Ex))  
     -   [2.12Master Binder (Su)](https://niched20.miraheze.org/wiki/Classes/Blade_Binder#Master_Binder_(Su))  
