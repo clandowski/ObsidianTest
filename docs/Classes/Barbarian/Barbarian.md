@@ -1,3 +1,25 @@
+
+## Contents
+
+-   [[#Class Details:]]
+-   [[#Class Features]]
+    -   [[#Weapon and Armor Proficiency]]
+    -   [[#[Stamina](https://niched20.miraheze.org/wiki/Martial_Classes "Martial Classes") (Ex)|Stamina, 4scrubs]]
+    -   [[#Powerful Strikes (Ex)]]
+    -   [[#Rage (Ex)]]
+    -   [[#Barbaric Vitality (Ex)]]
+    -   [[#Barbaric Path (Ex)]]
+    -   [[#Fury (Ex)]]
+    -   [[#Aggression (Ex)]]
+    -   [[#Barbaric Bond (Ex/Su)]]
+    -   [[#Vigor (Ex)]]
+    -   [[#Savagery (Ex/Su)]]
+    -   [[#Unstoppable (Ex)]]
+-   [[#Table - Aggressions:]]
+-   [[#Table - Barbaric Paths:]]
+-   [[#Table - Barbaric Bonds:]]
+-   [[#Table - Savageries:]]
+
 # Class Details
 
 Hit Die: d12
