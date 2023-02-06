@@ -1,7 +1,0 @@
-### Rules
-
-
-[[Barbarian]]
-[[Bladebinder]]
-
-%%YoloSwaggins%%
