@@ -1,5 +1,5 @@
 
-# Contents
+## Contents
 
 -   [[#Class Details:]]
 -   [[#Class Features]]
