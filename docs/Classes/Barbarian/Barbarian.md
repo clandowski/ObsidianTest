@@ -1,4 +1,4 @@
-# Class Details
+## Class Details
 
 Hit Die: d12
 Type: Martial
@@ -27,7 +27,7 @@ Skill Ranks Per Level: 2 + Int modifier.
 | 19th  | +19/+14/+9/+4     | +9                 | Aggression                                             |
 | 20th  | +20/+15/+10/+5    | +10                | Barbaric Path, Rage(+5), Unstoppable                   |
 
-# Class Features
+## Class Features
 
 The following are class features of the barbarian.
 
@@ -97,7 +97,7 @@ For a complete listing of savagries see Table: Savageries.
 
 At 20th level, the barbarian becomes nearly unkillable. The barbarian gains DR 5/- and energy resistance 1 to acid, cold, electricity, and fire damage; if the barbarian already possesses DR or energy resistance from their race or a barbarian class feature, instead increase it by 1. Finally while raging the barbarian gains regeneration 5, and the barbarian’s rage does not end even if knocked unconscious or dead, though it still only lasts up to its maximum number of rounds and may not be refreshed if unconscious or dead.
 
-# Table - Aggressions:
+## Table - Aggressions:
 
 | Name                 | Prerequisite   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | -------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -121,7 +121,7 @@ At 20th level, the barbarian becomes nearly unkillable. The barbarian gains DR 5
 | Sudden Strike (Ex)   | Barbarian 7th  | When a foe moves into any square threatened by the barbarian he may spend 2 fury to make an attack of opportunity against that foe, even if that movement would not normally provoke an attack of opportunity.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Wild Fighting (Ex)   | \-             | The barbarian may spend 2 points of fury when making a full-attack action to make one additional attack at his highest base attack bonus, but he takes a -2 penalty to attack rolls, and a -4 penalty to AC.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
-# Table - Barbaric Paths:
+## Table - Barbaric Paths:
 
 | **Name**                      | **Prerequisite**                                     | **Description**                                                                                                                                                                                                                                                                                                                                                                                  |
 |-------------------------------|------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -166,9 +166,9 @@ At 20th level, the barbarian becomes nearly unkillable. The barbarian gains DR 5
 | Unmoving (Ex)                 | Juggernaut path                                      | The barbarian reduces his penalty to CMD while raging by 2 if he is wearing heavy armor. At 5th level and every 5 levels thereafter he gains an additional +1 bonus to CMD while wearing heavy armor.                                                                                                                                                                                            |
 
 
-# Table - Barbaric Bonds:
+## Table - Barbaric Bonds:
 
 ![[Barbaric Bonds]]
 
-# Table - Savageries:
+## Table - Savageries:
 ![[Savageries]]
