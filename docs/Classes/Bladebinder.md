@@ -1,8 +1,4 @@
-  
-
-
-
-##### Class Details:
+## Class Details:
 
 Hit Die: d12
 
