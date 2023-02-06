@@ -7,7 +7,7 @@
 -   [[#Class Details:]]
 -   [[#Class Features]]
     -   [[#Weapon and Armor Proficiency]]
-    -   [[#[Stamina](https://niched20.miraheze.org/wiki/Martial_Classes "Martial Classes") (Ex)|Stamina, you know, that thing homos get]]
+    -   [[#[Stamina](https://niched20.miraheze.org/wiki/Martial_Classes "Martial Classes") (Ex)|Stamina, 4scrubs]]
     -   [[#Powerful Strikes (Ex)]]
     -   [[#Rage (Ex)]]
     -   [[#Barbaric Vitality (Ex)]]
