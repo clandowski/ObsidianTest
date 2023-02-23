@@ -20,7 +20,7 @@ plot:
     change: 
 data: 
   synopsis: "Everyone died already.  You didn't even leave the bar.  Why."
-  complete: false
+  complete: true
   abtStage: 
 ```
 ```RpgManager
