@@ -9,7 +9,7 @@ Skill Ranks Per Level: 2 + Int modifier.
 | 1st   | +1                | +0                 | Powerful Strikes, Rage(+1), Stamina, Barbaric Vitality |
 | 2nd   | +2                | +1                 | Barbaric Path                                          |
 | 3rd   | +3                | +1                 | Aggression, Fury                                       |
-| 4th   | +4                | +2                 | Barbaric Path                                          |
+| 4th   | +4                | +2                 | Barbaric Path                                          | 
 | 5th   | +5                | +2                 | Barbaric Bond, Rage(+2)                                |
 | 6th   | +6/+1             | +3                 | Barbaric Path                                          |
 | 7th   | +7/+2             | +3                 | Aggression, Vigor (1)                                  |
