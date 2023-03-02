@@ -5,7 +5,8 @@ Light     Dark     Nature          Water          Earth     Electric
 
 Energy > Heat, Cold
 Growth > Plant, Decay(acid)
-Phantasm
+Phantasm > Light, Dark
+
 
 
 ![[Untitled Diagram.svg]]
