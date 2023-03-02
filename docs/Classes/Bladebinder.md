@@ -1,5 +1,6 @@
 ---
 tags: ['Class', 'Bladebinder']
+PageType: 'Class'
 HitDie: 'd12'
 Type: 'Martial'
 Skills: 4

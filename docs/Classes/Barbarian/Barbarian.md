@@ -1,5 +1,6 @@
 ---
 tags: ['Class', 'Barbarian']
+PageType: 'Class'
 HitDie: 'd12'
 Type: 'Martial'
 Skills: 2
