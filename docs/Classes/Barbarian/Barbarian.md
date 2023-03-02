@@ -15,10 +15,10 @@ Skill Ranks Per Level: `= this.Skills` + Int modifier
 
 | Level | Base Attack Bonus | Base Defense Bonus | Special                                                |
 | ----- | ----------------- | ------------------ | ------------------------------------------------------ |
-| 1     |                 | +0                 | Powerful Strikes, Rage(+1), Stamina, Barbaric Vitality |
+| 1     | +1                | +0                 | Powerful Strikes, Rage(+1), Stamina, Barbaric Vitality |
 | 2     | +2                | +1                 | Barbaric Path                                          |
 | 3     | +3                | +1                 | Aggression, Fury                                       |
-| 4     | +4                | +2                 | Barbaric Path                                          | 
+| 4     | +4                | +2                 | Barbaric Path                                          |
 | 5     | +5                | +2                 | Barbaric Bond, Rage(+2)                                |
 | 6     | +6/+1             | +3                 | Barbaric Path                                          |
 | 7     | +7/+2             | +3                 | Aggression, Vigor (1)                                  |
@@ -35,6 +35,7 @@ Skill Ranks Per Level: `= this.Skills` + Int modifier
 | 18    | +18/+13/+8/+3     | +9                 | Barbaric Path                                          |
 | 19    | +19/+14/+9/+4     | +9                 | Aggression                                             |
 | 20    | +20/+15/+10/+5    | +10                | Barbaric Path, Rage(+5), Unstoppable                   |
+
 
 <label class="ob-comment" title="" style=""> ## Class Features <input type="checkbox"> <span style=""> They are shit. Shiiit. </span></label>
 
