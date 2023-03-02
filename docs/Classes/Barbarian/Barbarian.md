@@ -3,9 +3,11 @@ tags: ['Class', 'Barbarian']
 HitDie: 'd12'
 Type: 'Martial'
 Skills: 2
+BAB: 1
+BDE: .5
 ---
 
-## Class Details #Class
+## Class Details
 
 Hit Die: `= this.HitDie` 
 Type: `= this.Type`
@@ -13,26 +15,26 @@ Skill Ranks Per Level: `= this.Skills` + Int modifier
 
 | Level | Base Attack Bonus | Base Defense Bonus | Special                                                |
 | ----- | ----------------- | ------------------ | ------------------------------------------------------ |
-| 1st   | +1                | +0                 | Powerful Strikes, Rage(+1), Stamina, Barbaric Vitality |
-| 2nd   | +2                | +1                 | Barbaric Path                                          |
-| 3rd   | +3                | +1                 | Aggression, Fury                                       |
-| 4th   | +4                | +2                 | Barbaric Path                                          | 
-| 5th   | +5                | +2                 | Barbaric Bond, Rage(+2)                                |
-| 6th   | +6/+1             | +3                 | Barbaric Path                                          |
-| 7th   | +7/+2             | +3                 | Aggression, Vigor (1)                                  |
-| 8th   | +8/+3             | +4                 | Barbaric Path                                          |
-| 9th   | +9/+4             | +4                 | Savagery                                               |
-| 10th  | +10/+5            | +5                 | Barbaric Path, Rage(+3)                                |
-| 11th  | +11/+6/+1         | +5                 | Aggression                                             |
-| 12th  | +12/+7/+2         | +6                 | Barbaric Path, Vigor (2)                               |
-| 13th  | +13/+8/+3         | +6                 | Savagery                                               |
-| 14th  | +14/+9/+4         | +7                 | Barbaric Path                                          |
-| 15th  | +15/+10/+5        | +7                 | Aggression, Rage(+4)                                   |
-| 16th  | +16/+11/+6/+1     | +8                 | Barbaric Path                                          |
-| 17th  | +17/+12/+7/+2     | +8                 | Savagery, Vigor (3)                                    |
-| 18th  | +18/+13/+8/+3     | +9                 | Barbaric Path                                          |
-| 19th  | +19/+14/+9/+4     | +9                 | Aggression                                             |
-| 20th  | +20/+15/+10/+5    | +10                | Barbaric Path, Rage(+5), Unstoppable                   |
+| 1     |                 | +0                 | Powerful Strikes, Rage(+1), Stamina, Barbaric Vitality |
+| 2     | +2                | +1                 | Barbaric Path                                          |
+| 3     | +3                | +1                 | Aggression, Fury                                       |
+| 4     | +4                | +2                 | Barbaric Path                                          | 
+| 5     | +5                | +2                 | Barbaric Bond, Rage(+2)                                |
+| 6     | +6/+1             | +3                 | Barbaric Path                                          |
+| 7     | +7/+2             | +3                 | Aggression, Vigor (1)                                  |
+| 8     | +8/+3             | +4                 | Barbaric Path                                          |
+| 9     | +9/+4             | +4                 | Savagery                                               |
+| 10    | +10/+5            | +5                 | Barbaric Path, Rage(+3)                                |
+| 11    | +11/+6/+1         | +5                 | Aggression                                             |
+| 12    | +12/+7/+2         | +6                 | Barbaric Path, Vigor (2)                               |
+| 13    | +13/+8/+3         | +6                 | Savagery                                               |
+| 14    | +14/+9/+4         | +7                 | Barbaric Path                                          |
+| 15    | +15/+10/+5        | +7                 | Aggression, Rage(+4)                                   |
+| 16    | +16/+11/+6/+1     | +8                 | Barbaric Path                                          |
+| 17    | +17/+12/+7/+2     | +8                 | Savagery, Vigor (3)                                    |
+| 18    | +18/+13/+8/+3     | +9                 | Barbaric Path                                          |
+| 19    | +19/+14/+9/+4     | +9                 | Aggression                                             |
+| 20    | +20/+15/+10/+5    | +10                | Barbaric Path, Rage(+5), Unstoppable                   |
 
 <label class="ob-comment" title="" style=""> ## Class Features <input type="checkbox"> <span style=""> They are shit. Shiiit. </span></label>
 
