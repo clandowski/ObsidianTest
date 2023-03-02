@@ -36,7 +36,6 @@ Skill Ranks Per Level: `= this.Skills` + Int modifier
 | 19    | +19/+14/+9/+4     | +9                 | Aggression                                             |
 | 20    | +20/+15/+10/+5    | +10                | Barbaric Path, Rage(+5), Unstoppable                   |
 
-
 <label class="ob-comment" title="" style=""> ## Class Features <input type="checkbox"> <span style=""> They are shit. Shiiit. </span></label>
 
 The following are class features of the barbarian.
