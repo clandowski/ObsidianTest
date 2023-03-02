@@ -1,6 +1,6 @@
-## Class Details
+## Class Details #Class
 
-Hit Die: d12
+HitDie:: d12
 Type: Martial
 Skill Ranks Per Level: 2 + Int modifier.
 
