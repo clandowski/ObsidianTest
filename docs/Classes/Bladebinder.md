@@ -3,6 +3,7 @@ tags: ['Class', 'Bladebinder']
 HitDie: 'd12'
 Type: 'Martial'
 Skills: 4
+share: true
 ---
 ## Class Details:
 

@@ -5,6 +5,7 @@ Type: 'Martial'
 Skills: 2
 BAB: 1
 BDE: .5
+share: true
 ---
 
 ## Class Details
@@ -176,8 +177,12 @@ At 20th level, the barbarian becomes nearly unkillable. The barbarian gains DR 5
 
 
 ## Table - Barbaric Bonds:
+```dataview
+Table without ID file.name AS "Class", Type, Description
+FROM #Barbaric-Bond 
+Sort Name ascending
+```
 
-![[Barbaric Bonds]]
 
 ## Table - Savageries:
 ![[Savageries]]
