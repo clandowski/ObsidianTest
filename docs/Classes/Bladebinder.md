@@ -1,8 +1,14 @@
+---
+tags: ['Class', 'Barbarian']
+HitDie: 'd12'
+Type: 'Martial'
+Skills: 4
+---
 ## Class Details: #Class
 
-HitDie:: d12
-Type: Martial
-Skill Ranks Per Level: 4 + Int modifier.
+Hit Die: `= this.HitDie` 
+Type: `= this.Type`
+Skill Ranks Per Level: `= this.Skills` + Int modifier
 
 | **Level** | **Base Attack Bonus** | **Base Defense Bonus** | **Special**                                                  |
 |-----------|-----------------------|------------------------|--------------------------------------------------------------|
