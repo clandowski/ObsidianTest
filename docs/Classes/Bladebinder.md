@@ -1,10 +1,10 @@
 ---
-tags: ['Class', 'Barbarian']
+tags: ['Class', 'Bladebinder']
 HitDie: 'd12'
 Type: 'Martial'
 Skills: 4
 ---
-## Class Details: #Class
+## Class Details:
 
 Hit Die: `= this.HitDie` 
 Type: `= this.Type`
