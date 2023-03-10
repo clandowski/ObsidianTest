@@ -8,7 +8,7 @@ share: true
 ---
 ## Class Details:
 
-Hit Die: `= this.HitDie` 
+Hit Die: `= this.HitDie`
 Type: `= this.Type`
 Skill Ranks Per Level: `= this.Skills` + Int modifier
 
