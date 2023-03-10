@@ -1,5 +1,5 @@
 ---
-tags: ['Class', 'NaN']
+tags: ['Class', 'Class2TheSequel']
 PageType: 'Class'
 HitDie: 'd4'
 Type: 'Martial'
@@ -12,7 +12,14 @@ share: true
 
 ```
 ## Class Details
-Hit Die:  NaN
+Hit Die:  
+
+
+
+```
+
+
+
 Type: NaN
 Skill Ranks Per Level: NaN + Int modifier
 
