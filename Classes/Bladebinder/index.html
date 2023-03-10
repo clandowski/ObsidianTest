@@ -1,0 +1,1389 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../Untitled/" rel="prev"/>
+<link href="../Classes/" rel="next"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.1.2" name="generator"/>
+<title>Bladebinder - ObsidianTest</title>
+<link href="../../assets/stylesheets/main.7bf56d0a.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="pink" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#class-details">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="ObsidianTest" class="md-header__button md-logo" data-md-component="logo" href="../.." title="ObsidianTest">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            ObsidianTest
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Bladebinder
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="pink" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="blue" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="pink" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="ObsidianTest" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="ObsidianTest">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    ObsidianTest
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+        Home
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Untitled/">
+        Untitled
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Classes
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Classes
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Bladebinder
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Bladebinder
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#class-details">
+    Class Details:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#class-features">
+    Class Features
+  </a>
+<nav aria-label="Class Features" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#weapon-and-armor-proficiency">
+    Weapon and Armor Proficiency
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stamina-ex">
+    Stamina (Ex)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#combat-stance-ex">
+    Combat Stance (Ex)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#binder-specialization-su">
+    Binder Specialization (Su)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#summon-weapon-su">
+    Summon Weapon (Su)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#binder-talent-su">
+    Binder Talent (Su)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ki-pool-su">
+    Ki Pool (Su)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#blade-improvement-su">
+    Blade Improvement (Su)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#summon-armor-su">
+    Summon Armor (Su)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#armor-improvement-su">
+    Armor Improvement (Su)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#binders-resilience-ex">
+    Binder’s Resilience (Ex)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#master-binder-su">
+    Master Binder (Su)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#reality-sphere-su">
+    Reality Sphere (Su)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#list-binder-specializations">
+    List - Binder Specializations
+  </a>
+<nav aria-label="List - Binder Specializations" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#armor-binder">
+    Armor Binder
+  </a>
+<nav aria-label="Armor Binder" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#power-armor">
+    Power Armor
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#blade-spirit">
+    Blade Spirit
+  </a>
+<nav aria-label="Blade Spirit" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#improved-blade-spirit">
+    Improved Blade Spirit
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#greater-blade-spirit">
+    Greater Blade Spirit
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#master-blade-spirit">
+    Master Blade Spirit
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#elemental-shape">
+    Elemental Shape
+  </a>
+<nav aria-label="Elemental Shape" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#elemental-manifestation">
+    Elemental Manifestation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#condensed-elemental-blade">
+    Condensed Elemental Blade
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#condensed-elemental-armor">
+    Condensed Elemental Armor
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#enhancer">
+    Enhancer
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#implement-binder">
+    Implement Binder
+  </a>
+<nav aria-label="Implement Binder" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#improved-implement-binder">
+    Improved Implement Binder
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#greater-implement-binder">
+    Greater Implement Binder
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#offensive-summon">
+    Offensive Summon
+  </a>
+<nav aria-label="Offensive Summon" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#improved-offensive-summon">
+    Improved Offensive Summon
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#binders-mark">
+    Binder’s Mark
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#quartermaster">
+    Quartermaster
+  </a>
+<nav aria-label="Quartermaster" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#improved-quartermaster">
+    Improved Quartermaster
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#telekinetic-orbit">
+    Telekinetic Orbit
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#telekinetic-equipment">
+    Telekinetic Equipment
+  </a>
+<nav aria-label="Telekinetic Equipment" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#improved-telekinetic-equipment">
+    Improved Telekinetic Equipment
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#table-binder-talents">
+    Table - Binder Talents:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#table-blade-improvements">
+    Table - Blade Improvements:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#table-armor-improvements">
+    Table - Armor Improvements:
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Classes/">
+        Classes
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../TestClass/">
+        TestClass
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+          Barbarian
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_4">
+<span class="md-nav__icon md-icon"></span>
+          Barbarian
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Barbarian/Barbarian/">
+        Barbarian
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Barbarian/Barbaric%20Bonds/">
+        Barbaric Bonds
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Barbarian/Savageries/">
+        Savageries
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_4_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4_4" id="__nav_3_4_4_label" tabindex="0">
+          Barbaric Bonds
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_4_4_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_4_4">
+<span class="md-nav__icon md-icon"></span>
+          Barbaric Bonds
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Barbarian/Barbaric%20Bonds/Animal%20Aspect/">
+        Animal Aspect
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Barbarian/Barbaric%20Bonds/Death%20Bond/">
+        Death Bond
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Barbarian/Barbaric%20Bonds/Mounted%20Fury/">
+        Mounted Fury
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Barbarian/Barbaric%20Bonds/Tribal%20Bond/">
+        Tribal Bond
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+          Untitled
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_5">
+<span class="md-nav__icon md-icon"></span>
+          Untitled
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Untitled/Class2TheSequel/">
+        Class2TheSequel
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Untitled/TestClass2/">
+        TestClass2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Untitled/Untitled/">
+        Untitled
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Features
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Features
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Features/Class%20List/">
+        Class List
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Features/LaTeX%20Math%20Support/">
+        LaTeX Math Support
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Features/Mermaid%20Diagrams/">
+        Mermaid diagrams
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Features/Text%20Formatting/">
+        Text Formatting
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#class-details">
+    Class Details:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#class-features">
+    Class Features
+  </a>
+<nav aria-label="Class Features" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#weapon-and-armor-proficiency">
+    Weapon and Armor Proficiency
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stamina-ex">
+    Stamina (Ex)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#combat-stance-ex">
+    Combat Stance (Ex)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#binder-specialization-su">
+    Binder Specialization (Su)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#summon-weapon-su">
+    Summon Weapon (Su)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#binder-talent-su">
+    Binder Talent (Su)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ki-pool-su">
+    Ki Pool (Su)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#blade-improvement-su">
+    Blade Improvement (Su)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#summon-armor-su">
+    Summon Armor (Su)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#armor-improvement-su">
+    Armor Improvement (Su)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#binders-resilience-ex">
+    Binder’s Resilience (Ex)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#master-binder-su">
+    Master Binder (Su)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#reality-sphere-su">
+    Reality Sphere (Su)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#list-binder-specializations">
+    List - Binder Specializations
+  </a>
+<nav aria-label="List - Binder Specializations" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#armor-binder">
+    Armor Binder
+  </a>
+<nav aria-label="Armor Binder" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#power-armor">
+    Power Armor
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#blade-spirit">
+    Blade Spirit
+  </a>
+<nav aria-label="Blade Spirit" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#improved-blade-spirit">
+    Improved Blade Spirit
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#greater-blade-spirit">
+    Greater Blade Spirit
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#master-blade-spirit">
+    Master Blade Spirit
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#elemental-shape">
+    Elemental Shape
+  </a>
+<nav aria-label="Elemental Shape" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#elemental-manifestation">
+    Elemental Manifestation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#condensed-elemental-blade">
+    Condensed Elemental Blade
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#condensed-elemental-armor">
+    Condensed Elemental Armor
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#enhancer">
+    Enhancer
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#implement-binder">
+    Implement Binder
+  </a>
+<nav aria-label="Implement Binder" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#improved-implement-binder">
+    Improved Implement Binder
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#greater-implement-binder">
+    Greater Implement Binder
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#offensive-summon">
+    Offensive Summon
+  </a>
+<nav aria-label="Offensive Summon" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#improved-offensive-summon">
+    Improved Offensive Summon
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#binders-mark">
+    Binder’s Mark
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#quartermaster">
+    Quartermaster
+  </a>
+<nav aria-label="Quartermaster" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#improved-quartermaster">
+    Improved Quartermaster
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#telekinetic-orbit">
+    Telekinetic Orbit
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#telekinetic-equipment">
+    Telekinetic Equipment
+  </a>
+<nav aria-label="Telekinetic Equipment" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#improved-telekinetic-equipment">
+    Improved Telekinetic Equipment
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#table-binder-talents">
+    Table - Binder Talents:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#table-blade-improvements">
+    Table - Blade Improvements:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#table-armor-improvements">
+    Table - Armor Improvements:
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1>Bladebinder</h1>
+<h2 id="class-details">Class Details:<a class="headerlink" href="#class-details" title="Permanent link">¶</a></h2>
+<p>Hit Die: <code>= this.HitDie</code>
+Type: <code>= this.Type</code>
+Skill Ranks Per Level: <code>= this.Skills</code> + Int modifier</p>
+<table>
+<thead>
+<tr>
+<th><strong>Level</strong></th>
+<th><strong>Base Attack Bonus</strong></th>
+<th><strong>Base Defense Bonus</strong></th>
+<th><strong>Special</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1st</td>
+<td>1</td>
+<td>0</td>
+<td>Stamina, Combat Stance, Binder Specialization, Summon Weapon</td>
+</tr>
+<tr>
+<td>2nd</td>
+<td>2</td>
+<td>1</td>
+<td>Binder Talent</td>
+</tr>
+<tr>
+<td>3rd</td>
+<td>3</td>
+<td>1</td>
+<td>Binder Specialization, Blade Improvement, Ki Pool</td>
+</tr>
+<tr>
+<td>4th</td>
+<td>4</td>
+<td>2</td>
+<td>Binder Talent</td>
+</tr>
+<tr>
+<td>5th</td>
+<td>5</td>
+<td>2</td>
+<td>Summon Armor, Armor Improvement</td>
+</tr>
+<tr>
+<td>6th</td>
+<td>+6/+1</td>
+<td>3</td>
+<td>Binder Talent</td>
+</tr>
+<tr>
+<td>7th</td>
+<td>+7/+2</td>
+<td>3</td>
+<td>Blade Improvement, Binder’s Resilience</td>
+</tr>
+<tr>
+<td>8th</td>
+<td>+8/+3</td>
+<td>4</td>
+<td>Binder Talent, Binder Specialization</td>
+</tr>
+<tr>
+<td>9th</td>
+<td>+9/+4</td>
+<td>4</td>
+<td>Armor Improvement</td>
+</tr>
+<tr>
+<td>10th</td>
+<td>+10/+5</td>
+<td>5</td>
+<td>Binder Talent</td>
+</tr>
+<tr>
+<td>11th</td>
+<td>+11/+6/+1</td>
+<td>5</td>
+<td>Blade Improvement</td>
+</tr>
+<tr>
+<td>12th</td>
+<td>+12/+7/+2</td>
+<td>6</td>
+<td>Binder Talent</td>
+</tr>
+<tr>
+<td>13th</td>
+<td>+13/+8/+3</td>
+<td>6</td>
+<td>Binder Specialization, Armor Improvement</td>
+</tr>
+<tr>
+<td>14th</td>
+<td>+14/+9/+4</td>
+<td>7</td>
+<td>Binder Talent</td>
+</tr>
+<tr>
+<td>15th</td>
+<td>+15/+10/+5</td>
+<td>7</td>
+<td>Blade Improvement, Master Binder</td>
+</tr>
+<tr>
+<td>16th</td>
+<td>+16/+11/+6/+1</td>
+<td>8</td>
+<td>Binder Talent</td>
+</tr>
+<tr>
+<td>17th</td>
+<td>+17/+12/+7/+2</td>
+<td>8</td>
+<td>Armor Improvement</td>
+</tr>
+<tr>
+<td>18th</td>
+<td>+18/+13/+8/+3</td>
+<td>9</td>
+<td>Binder Talent, Binder Specialization</td>
+</tr>
+<tr>
+<td>19th</td>
+<td>+19/+14/+9/+4</td>
+<td>9</td>
+<td>Blade Improvement</td>
+</tr>
+<tr>
+<td>20th</td>
+<td>+20/+15/+10/+5</td>
+<td>10</td>
+<td>Binder Talent, Reality Sphere</td>
+</tr>
+</tbody>
+</table>
+<h2 id="class-features">Class Features<a class="headerlink" href="#class-features" title="Permanent link">¶</a></h2>
+<p>The following are class features of the fighter.</p>
+<h4 id="weapon-and-armor-proficiency">Weapon and Armor Proficiency<a class="headerlink" href="#weapon-and-armor-proficiency" title="Permanent link">¶</a></h4>
+<p>A blade binder is proficient with all simple weapons and armor. If this is the character’s first level in a class he gains proficiency in all martial weapons and armor.</p>
+<h4 id="stamina-ex"><a href="https://niched20.miraheze.org/wiki/Martial_Classes" title="Martial Classes">Stamina</a> (Ex)<a class="headerlink" href="#stamina-ex" title="Permanent link">¶</a></h4>
+<p>At 1st level, a blade binder gains access to a pool of stamina points that allow him to perform feats of strength and agility. This pool contains a number of stamina points equal to his Endurance modifier plus his levels in martial classes (minimum 1). This pool replenishes once per day after a long rest.</p>
+<h4 id="combat-stance-ex">Combat Stance (Ex)<a class="headerlink" href="#combat-stance-ex" title="Permanent link">¶</a></h4>
+<p>If this is the character’s first level in a martial class, the blade binder gains his choice of Power Stance, Whirlwind Stance, or Skirmisher Stance as a bonus feat.</p>
+<h4 id="binder-specialization-su">Binder Specialization (Su)<a class="headerlink" href="#binder-specialization-su" title="Permanent link">¶</a></h4>
+<p>At 1st level, the blade binder gains access to a specialization that furthers his capabilities, and in some cases enhances more of his energy sources and ki point focus. At 3rd level and every 5 levels thereafter the blade binder gains an additional binder specialization.</p>
+<p>For a complete listing of binder specializations, see List - Binder Specializations.</p>
+<h4 id="summon-weapon-su">Summon Weapon (Su)<a class="headerlink" href="#summon-weapon-su" title="Permanent link">¶</a></h4>
+<p>At 1st level, the blade binder learns to summon a weapon through the combination of his own power and the powers of creation itself. This ability requires a standard action and 1 stamina, summoning the weapon directly into the hands of the blade binder. The summoned weapon must be one the blade binder is proficient with and appropriately sized for him; the shape, size, and type of weapon it will be is chosen at the time of summoning. Once summoned, the blade lasts indefinitely or until the blade leaves his possession for longer than 1 round. Weapons summoned with this ability are summoned with a +1 enhancement bonus.</p>
+<p>You may only have 2 weapons plus an additional 1 weapon per 6 blade binder levels you possess summoned at one time. When summoning a combination or double weapon the blade binder must pay 2 stamina to summon it, but doing applies any blade improvements or additional bonuses to both weapons of the weapon without requiring the blade binder to pay a second time. Double weapons and combination weapons count as 2 weapons for the purposes of how many weapons the blade binder currently has summoned. At 2nd level a blade binder may summon two weapons with a single use of summon weapon by increasing the stamina cost by 1.</p>
+<p>At 3rd level, upon gaining a Ki Pool the Blade Binder may spend Ki instead of stamina when using this ability. In addition at 3rd level, the blade binder’s summoned weapons gain an additional +1 enhancement bonus (maximum +5) for every 3 MPB he possesses after 1st,  to a maximum of +5.</p>
+<h4 id="binder-talent-su">Binder Talent (Su)<a class="headerlink" href="#binder-talent-su" title="Permanent link">¶</a></h4>
+<p>At 2nd level and every 2 levels thereafter a binder gains the benefits of a binder talent. If a binder talent calls for a save attack the save attack is made at 1d20 + ½ MPB + Psyche modifier unless specified otherwise. They may add the enhancement bonus of a wielded weapon to this save attack.</p>
+<p>For a complete listing of binder talents, see Table - Binder Talents.</p>
+<h4 id="ki-pool-su">Ki Pool (Su)<a class="headerlink" href="#ki-pool-su" title="Permanent link">¶</a></h4>
+<p>At 3rd level, a blade binder gains access to a pool of internal energies called ki, which allow him to perform supernatural feats that go beyond the limits of his physical body. This pool contains a number of ki points equal 1 + his Psyche modifier (minimum 2) and refreshes once per day when the blade binder regains his stamina. A blade binder may spend 1 point of stamina as a free action on his turn to regain 2 points of his ki pool.</p>
+<p>As long as the blade binder has at least 1 point in his ki pool, he gains an enhancement bonus on athletics checks to jump equal to his class level, and his unarmed strikes and natural attacks are treated as magic weapons. At 8th level, his unarmed strikes and natural attacks are treated as silver for the purpose of overcoming damage reduction.</p>
+<p>In addition at 3rd level a blade binder expands his repertoire of his Ki Pool allowing him to spend his ki points in additional ways:</p>
+<ul>
+<li>Spend a ki point in place of a reaction.</li>
+<li>Once per round, spend a ki point as a reaction to gain a +4 dodge bonus to AC for 1 round.</li>
+<li>Once per round, spend a ki point as a reaction to gain a +20 enhancement bonus to athletics checks made to jump for 1 round, and to be considered as having a running start when making such a check.</li>
+</ul>
+<p>If a blade binder gains a ki pool from another source, he does not combine the pools for the purposes of determining capacity, nor does he gain an additional ki pool, but may spend points from his ki pool to pay for abilities from either source that require ki points. If each pool requires different ability scores (such as Psyche and Focus) the blade binder may use the higher of the two ability scores when determining the capacity of his ki pool. The blade binder may add together his levels in all classes that grant a ki pool to determine the abilities of his ki pool class feature.</p>
+<h4 id="blade-improvement-su">Blade Improvement (Su)<a class="headerlink" href="#blade-improvement-su" title="Permanent link">¶</a></h4>
+<p>At 3rd level, the blade binder gains 2 blade improvements; allowing him to further customize his summoned weapons. A blade binder must choose to apply a blade improvement at the time of summoning, and must summon a different weapon to apply different blade improvements. A blade binder may only have a maximum of 1 blade improvement plus an additional blade improvement for every 4 levels of blade binder you possess (to a maximum of 6 blade improvements) applied to a single summoned weapon.</p>
+<p>A summoned weapon with a blade improvement treats each blade improvement as a +1 bonus worth of magic weapon special ability (+2 or more if a blade improvement counts as more than one blade improvement). If a weapon possesses any magic weapon special abilities from enhancement seals applied to the weapon, in addition to the blade improvements applied to the weapon, beyond +5 are suppressed until the total magic weapon special abilities plus the blade improvements are equal to or lower than +5.</p>
+<p>At 7th level and every 4 levels thereafter the blade binder gains an additional blade improvement. For every 8 levels after 3rd the blade binder gains a bonus blade improvement in addition to the one he normally gains at that level. If a blade improvement calls for a save attack the save attack is made at 1d20 + ½ MPB + Psyche modifier. They may add the enhancement bonus of a wielded weapon to this save attack.</p>
+<p>For a complete listing of blade improvements, see Table - Blade Improvements.</p>
+<h4 id="summon-armor-su">Summon Armor (Su)<a class="headerlink" href="#summon-armor-su" title="Permanent link">¶</a></h4>
+<p>At 5th level, the blade binder learns to summon armor you are proficient with. Summoning armor takes a standard action costing 1 Ki pool point. The armor may be summoned directly onto the blade binder as part of summoning. Unless otherwise specified, the blade binder may not apply blade improvement talents to his summoned armor. The blade binder may only have one set of armor summoned at one time, replacing the existing one each time he summons a new one. The armor is summoned at a +1 enhancement bonus, increasing by an additional +1 at 6 MPB and every 3 MPB thereafter. Similar to summoned weapons if the summoned armor leaves the blade binder’s possession for more than 1 round it immediately disappears. The blade binder may only have a single suit of armor summoned at one time.</p>
+<p>Unlike normal armor the binder’s summoned armor has a total health pool equal to 15 per blade binder level. This health pool is shared across all his summoned armor; and once depleted he may no longer summon armor for the remainder of the day. This armor health pool cannot be repaired by any magic or mundane means except for blade binder abilities that allow him to restore this health pool. In addition, despite the type of armor his armor’s hardness is always 5 + 1 per 4 blade binder levels.  If the blade binder multiclasses he may count his levels in non-blade binder classes as ½ blade binder levels for determining the hardness of this armor and the size of his armor health pool.</p>
+<h4 id="armor-improvement-su">Armor Improvement (Su)<a class="headerlink" href="#armor-improvement-su" title="Permanent link">¶</a></h4>
+<p>At 5th level, the blade binder gains 3 armor improvements, allowing him to further customize his summoned armor. A blade binder must choose to apply an armor improvement at the time of summoning. A blade binder may only have a maximum of 1 armor improvement  plus an additional armor improvement for every 4 levels of blade binder you possess (to a maximum of 6 blade improvements) applied to a single summoned armor. A summoned armor with a armor improvement treats each armor improvement as a +1 bonus worth of magic armor special ability (+2 or more if a armor improvement counts as more than one armor improvement). If a armor possesses any magic armor special abilities from enhancement seals applied to the armor, in addition to the armor improvements applied to the armor, beyond +5 are suppressed until the total magic armor special abilities plus the armor improvements are equal to or lower than +5.</p>
+<p>At 9th level and every 4 levels thereafter the blade binder gains an additional armor improvement. If an armor improvement calls for a save attack the save attack is made at 1d20 + ½ MPB + Psyche modifier. They may add the enhancement bonus of their armor to this save attack.</p>
+<p>For a complete listing of armor improvements, see Table - Armor Improvements.</p>
+<h4 id="binders-resilience-ex">Binder’s Resilience (Ex)<a class="headerlink" href="#binders-resilience-ex" title="Permanent link">¶</a></h4>
+<p>At 7th level, the blade binder becomes more attuned to his summoned equipment, making it difficult to harm them or separate him from them. The binder gains a +2 competence bonus against sunder attempts against his summoned weapons and armor, as well as a +2 competence bonus against disarm attempts against his summoned weapons. At 12th level and every 6 levels thereafter the blade binder improves these competence bonuses by 1.</p>
+<h4 id="master-binder-su">Master Binder (Su)<a class="headerlink" href="#master-binder-su" title="Permanent link">¶</a></h4>
+<p>At 15th level, the blade binder’s weapons and armor become equipment of legend. The blade binder may spend 1 additional Ki point as part of summoning his weapons to cause them to ignore a number of points of DR a creature possesses equal to 1 + 1 per 5 blade binder levels.</p>
+<p>He may also spend 1 additional Ki point as part of summoning his armor to cause all armor he summons to provide him with DR 1/- improving by 1 per 5 blade binder levels; this DR stacks with other sources of DR the blade binder might possess.</p>
+<p>In addition a number of times per day equal to half the blade binder’s Psyche modifier (minimum 1); the blade binder may spend 2 Ki points as a reaction at the start of his turn to double these bonuses until the start of his next turn.</p>
+<h4 id="reality-sphere-su">Reality Sphere (Su)<a class="headerlink" href="#reality-sphere-su" title="Permanent link">¶</a></h4>
+<p>At 20th level, the binder’s source of power for his bound equipment grows to such power it becomes its own plane of existence. This plane of existence is a looping plane (causing creatures to loop around upon reaching the edges) of about 1 mile wide. The view and theme of the inside is the choice of the blade binder, but usually reflects his source of power and his specializations. Time here flows normally and is always hospitable for the blade binder.</p>
+<p>The blade binder may transport himself here by spending 1 stamina as a full-round action which provokes attacks of opportunity. While in this area he may meditate for 1 hour. Upon finishing his meditation he becomes more aligned with his source of power allowing the blade binder to treat his MPB as 4 higher for the purposes of determining the power of any of his blade binder class features, as well as an additional blade and armor improvement. In addition, while in this sphere the blade binder reduces the cost of all his abilities that cost Ki points by 1 (minimum 0). This bonus lasts until the blade binder rests and regains stamina. The blade binder may spend a full-round action to return from his sphere, which always returns him to the point he entered his sphere from; this does not cost him a stamina to leave his sphere.</p>
+<p>The blade binder may bring 1 adjacent creature along to this plane as part of the same full-round action; but doing so requires a Mental save attack roll (1d20 + ½ blade binder level + Psyche modifier) They may add the enhancement bonus of a wielded weapon to this save attack. On a success the creature is brought to this sphere with him. The creature only remains within this sphere for 1 round per blade binder level, and it may attempt a new Mental save against the original save attack each round as a move action to attempt to force itself out of this sphere.</p>
+<h2 id="list-binder-specializations">List - Binder Specializations<a class="headerlink" href="#list-binder-specializations" title="Permanent link">¶</a></h2>
+<h4 id="armor-binder">Armor Binder<a class="headerlink" href="#armor-binder" title="Permanent link">¶</a></h4>
+<p><strong>Prerequisites</strong>: None</p>
+<p><strong>Benefit</strong>: The blade binder gains the summon armor class feature at 1st level, and the armor improvement class feature at 3rd level. The blade binder instead gains the summon weapon and blade improvement class features at 5th level. The blade binder may not select specializations that require summoned weapon until he gains summon weapon at 5th level. The blade binder may use stamina in place of any ability that requires ki for summon armor until he gains a ki pool at 3rd. At 5th level, and every 5 levels thereafter, the blade binder may divert a blade improvement to apply an additional armor improvement, allowing them to reduce how many blade improvements they may have active on any weapon at once while boosting the number their armor may possess.</p>
+<h5 id="power-armor">Power Armor<a class="headerlink" href="#power-armor" title="Permanent link">¶</a></h5>
+<p><strong>Prerequisites</strong>: Blade Binder 3rd; Armor Binder or Summon Armor</p>
+<p><strong>Benefit</strong>: The blade binder gains an enhancement bonus to all strength and Agility based skill checks, and MSB and Physical(Str) checks for all reposition or grapple combat maneuvers equal to his summoned armor’s enhancement bonus. In addition the blade binder adds half his armor’s strength rating value to all damage rolls with melee weapons; at 8th level the binder instead adds all of his armor's strength rating; this does not apply to the strength rating increases for lacking proficiency in an armor.</p>
+<h4 id="blade-spirit">Blade Spirit<a class="headerlink" href="#blade-spirit" title="Permanent link">¶</a></h4>
+<p><strong>Prerequisites</strong>: Blade Binder 3rd, Summon Weapon</p>
+<p><strong>Benefit</strong>: Your power begins to take on a mind of its own, gaining minor sentience. The blade binder gains a companion as described on the companion page treating his levels in blade binder as spell prowess bonus to determine the progression of this companion (and stacks with spell prowess bonus gained from other sources).</p>
+<p>The companion gained this way must select the avian, quadruped, serpentine, or vermin base form. It gains the celestial, fiendish, demonic, or anarchic type as it’s companion type. The companion gains these types and talents even if the blade binder does not meet the prerequisites.</p>
+<p>When the blade binder summons a piece of equipment he may choose to spend an additional ki point to summon this companion wielding the chosen piece of equipment. The companion is automatically proficient with the piece of equipment and may wield the weapon without issue. If the creature has a second limb capable of wielding weapons the blade binder may summon two weapons onto the weapon as normal. While wielding the binder’s summoned weapon the equipment does not disappear from not being wielded by the blade binder.</p>
+<p>The summoned companion lasts until the blade binder rests to regain stamina. Once slain the creature may not be re-summoned for the remainder of the day until he rests unless the blade binder spends 1 stamina to summon it again, but with only half its total hit points. The blade binder’s companion disappears after 1 round if it goes beyond 30 feet + 5 feet per 2 blade binder levels.</p>
+<h5 id="improved-blade-spirit">Improved Blade Spirit<a class="headerlink" href="#improved-blade-spirit" title="Permanent link">¶</a></h5>
+<p><strong>Prerequisites</strong>: Blade Spirit Specialization, Blade Binder 8th</p>
+<p><strong>Benefit</strong>: You and your blade spirit become of one mind, granting the binder full sensory input from it while it is summoned. While in range of the blade binder he may telekinetically give commands to his blade spirit and direct it as necessary with no additional actions required. In addition the blade spirit may now remain up to 100 feet + 10 feet per blade binder level from the blade binder before being at risk of disappearing.</p>
+<h5 id="greater-blade-spirit">Greater Blade Spirit<a class="headerlink" href="#greater-blade-spirit" title="Permanent link">¶</a></h5>
+<p><strong>Prerequisites</strong>: Improved Blade Spirit Specialization, Blade Binder 13th</p>
+<p><strong>Benefit</strong>: You learn to assume direct control of your blade spirit as a full-round action. While in direct control your companion becomes a mirror of your inner self, gaining a copy of any combat or martial feats that you possess; the companion loses access to any combat or martial feats it possesses while being directly controlled by the blade binder, but may retain a number equal to the blade binder’s Psyche modifier (to a maximum of 1 per 4 blade binder levels). While assuming direct control the blade binder may not take actions and is flat-footed, but is otherwise aware of nearby dangers; during this time the binder controls and directs the blade spirit on the spirit’s turn. The blade binder may choose to end the direct control as a free action on his turn. Once the control ends the spirit returns to normal and begins taking its own actions again.</p>
+<h5 id="master-blade-spirit">Master Blade Spirit<a class="headerlink" href="#master-blade-spirit" title="Permanent link">¶</a></h5>
+<p><strong>Prerequisites</strong>: Blade Spirit Specialization, Blade Binder 18th</p>
+<p><strong>Benefit</strong>: You may spend 2 ki points as a standard action to cause an existing blade spirit companion to become empowered. For 1 minute the companion gains a bonus to attack rolls equal to the blade binder’s Psyche modifier (to a maximum of 1 per 4 blade binder levels), as well as an enhancement bonus to all its physical attributes equal to any enhancement bonus his summoned equipment possesses.</p>
+<p><strong>Special</strong>: The binder may activate this ability as part of assuming direct control if he possesses the Greater Blade Spirit specailization.</p>
+<h4 id="elemental-shape">Elemental Shape<a class="headerlink" href="#elemental-shape" title="Permanent link">¶</a></h4>
+<p><strong>Prerequisites</strong>: Summon Weapon</p>
+<p><strong>Benefit</strong>: Upon selecting this specialization the blade binder selects a single element from Water, Fire, Cold, Earth, Electric, Or Wind. The blade binder gains the ability to shape his weaponry with this element attuning his equipment to the chosen element. When using his summon weapon ability the blade binder’s summoned weapons deal additional damage equal to his Psyche modifier (maximum 1 per blade binder level) of his chosen element’s type and is multiplied on a crit. Unlike blade improvements the blade binder’s weapons are always summoned with this ability, though he may spend a reaction to suppress this ability on a single summoned weapon he is wielding for 1 minute.</p>
+<h5 id="elemental-manifestation">Elemental Manifestation<a class="headerlink" href="#elemental-manifestation" title="Permanent link">¶</a></h5>
+<p><strong>Prerequisites</strong>: Elemental Shape, Blade Binder 3rd</p>
+<p><strong>Benefit</strong>: The blade binder learns to manifest his chosen element from his elemental shape ability in two different ways:</p>
+<p><strong>Elemental Shroud</strong>: The blade binder can spend a Ki point as a reaction to empower his currently summoned weapon to become shrouded in elemental power, dealing an additional 1d6 damage of his chosen element, improving by an additional 1d6 at 5th level and every 5 thereafter; this effect lasts a number of rounds equal to the blade binder’s Psyche modifier.  </p>
+<p><strong>Elemental Blast</strong>: The blade binder learns to summon his element into an elemental blast. The blade binder may spend 1 Ki point as a standard action to make a Physical(Agi) save attack against all creatures within a line, cone, or burst A successful save attack deals 1d6 damage per 2 MPB, while a failed save attack deals half damage. At 5th level a blade binder can spend 1 additional Ki point when using this ability to improve the damage to 1d6 per MPB. They may add the enhancement bonus of their summoned weapon to this save attack.</p>
+<p>Shape</p>
+<p>Size</p>
+<p>Line</p>
+<p>15 feet + 5 feet per 2 blade binder levels</p>
+<p>Cone</p>
+<p>10 feet + 5 feet per 2 blade binder levels</p>
+<p>Burst(Centered on the blade binder)</p>
+<p>10 feet + 5 feet per 4 blade binder levels</p>
+<h5 id="condensed-elemental-blade">Condensed Elemental Blade<a class="headerlink" href="#condensed-elemental-blade" title="Permanent link">¶</a></h5>
+<p><strong>Prerequisites</strong>: Elemental Manifestation, Blade Binder 8th</p>
+<p><strong>Benefit</strong>: The binder learns to focus his energies, causing his weapon to become both an object of the ki point and of elemental energy. The binder learns to summon a special scabbard for his summoned weapons. The blade binder may only have one of these special scabbards summoned at one time, and this scabbard counts against his summoned weapon limit.</p>
+<p>The binder may spend 2 ki points as part of sheathing a summoned melee weapon within this special scabbard; once within the scabbard the weapon must remain within it for 8 hours before it is drawn again, if drawn early the weapon remains unchanged and the blade binder must pay 2 Ki points to restart the process. If the weapon remains within the scabbard for 8 hours it becomes a condensed elemental blade.</p>
+<p>When a condensed elemental blade is first drawn from its scabbard it releases a large wave of energy as if the blade binder had used the elemental blast ability from his elemental manifestation specialization; the binder may spend a Ki point to improve the elemental blast’s damage. Once drawn the condensed elemental blade lasts for 1 minute per blade binder level before the energies dissipate and the weapon returns to a normal summoned weapon.</p>
+<p>The condensed elemental blade when drawn takes on an appearance of a solid weapon whose edges wave and crackle with elemental energies making it seem both solid and immaterial at once.  While in this form the blade binder may freely reshape this weapon into a different weapon he is proficient with, and may add or remove weapon special features (such as reach, brace, and blocking) despite the weapons current form. The condensed elemental blade may only add or remove a total number of weapon features on this condensed blade equal to 1 + 1 per 5 blade binder levels.</p>
+<p>In addition while in this form the elemental blade deals dealing an additional 1d6 for every 4 blade binder levels he possesses, as well as dealing an additional number of points of elemental damage equal to his blade binder level; the blade binder may apply elemental shroud to this weapon as normal.</p>
+<h5 id="condensed-elemental-armor">Condensed Elemental Armor<a class="headerlink" href="#condensed-elemental-armor" title="Permanent link">¶</a></h5>
+<p><strong>Prerequisites</strong>: Condensed Elemental Blade, Summon Armor, Blade Binder 13th</p>
+<p><strong>Benefit</strong>: The blade binder learns to create his armor out of the same condensed elemental energies, using it to create a more flexible form of armor that both protects and helps push his abilities even further. The blade binder may spend 2 ki points to summon a new set of armor of a type he is proficient in, or transform his existing armor into the condensed elemental form. While wearing the condensed elemental armor the blade binder gains an enhancement bonus to his Strength and Agility equal to 1 + the enhancement bonus of his summoned armor, as well as a 10 enhancement bonus + 10 per +1 enhancement bonus of his armor, to his movement speed. In addition the blade bidner gains Resist equal to the armor’s enhancement bonus against his chosen element.</p>
+<p>The armor lasts 1 round per blade binder level before the armor dissipates turning into normal armor of its summoned type. The blade binder must wait 8 hours before using this ability again. The binder may not use this ability while fatigued.</p>
+<h4 id="enhancer">Enhancer<a class="headerlink" href="#enhancer" title="Permanent link">¶</a></h4>
+<p><strong>Prerequisites</strong>: None</p>
+<p><strong>Benefit</strong>: The blade binder may channel his energies into an existing piece of equipment he is currently wielding. By spending the same cost to summon a weapon or armor he may cause a single piece of equipment to attain any enhancement bonus his summon weapon ability would allow. Due to the strengthening nature of this ability, the blade binder may enhance items that normally aren’t meant to be weapons, allowing him to treat himself as proficient with a improvised weapon he has enhanced; the improvised weapon is still treated as improvised for the purposes of feats and abilities that interact with improvised weapons. As part of using this ability the blade binder may choose to allow the weapon to have blade improvements applied to it; but when doing so is subject to the same restrictions as blade improvements as normal. This enhancement lasts until the blade binder rests to regain stamina or when the weapon leaves his possession for more than 1 round. Weapons enhanced this way are otherwise treated as summoned weapons while they are enhanced for the purposes of interacting with other blade binder abilities.</p>
+<h4 id="implement-binder">Implement Binder<a class="headerlink" href="#implement-binder" title="Permanent link">¶</a></h4>
+<p><strong>Prerequisites</strong>: Blade Binder 3rd, Summon Weapon</p>
+<p><strong>Benefit</strong>: You tap into the elemental energies of magic to turn your summoned weapon into an implement. When summoning an implement the weapon takes the form of a quarterstaff, but otherwise is treated as a casting implement. A summoned implement allows the blade binder rudimentary casting, treating the implement as possessing the extra affinity special ability of his chosen elemental energy source. In addition the staff is treated as having the extra spell special ability, treating his BCB as equal to half his levels in blade binder, allowing him to cast while holding the implement. The blade binder may use his stamina pool to pay any spell point costs for this talent. The blade binder may spend one week in a ritual to re-attune himself to a new affinity and spell, changing out what affinity talent and spell his implement gains.</p>
+<p>Any enhancement bonus your summoned weapon grants applies to the implement and any spells cast with it.</p>
+<h5 id="improved-implement-binder">Improved Implement Binder<a class="headerlink" href="#improved-implement-binder" title="Permanent link">¶</a></h5>
+<p><strong>Prerequisites</strong>: Implement Binder, Blade Binder 8th</p>
+<p><strong>Benefit</strong>: The blade binder may now create an additional implement with a new affinity talent and spell that he has not already selected with Implement Binder. When summoning an implement he may now choose which of these implements he is summoning. He may also have two implements summoned at once now, but each must have a different affinity talent and spell applied. At 10th level and every 5 levels thereafter the blade binder gains a new implement with a new affinity talent and spell; but is still limited to only two implements at a time.</p>
+<h5 id="greater-implement-binder">Greater Implement Binder<a class="headerlink" href="#greater-implement-binder" title="Permanent link">¶</a></h5>
+<p><strong>Prerequisites</strong>: Improved Implement Binder, Blade Binder 13th</p>
+<p><strong>Benefit</strong>: The blade binder may now treat his BCB as equal to ¾ of his level in blade binder with spells cast through his implements. In addition each of his implements summon with the extra talent or extra spell special ability, which does not count against any blade improvements he may apply. The blade binder must select which special ability and granted spell or talent is applied to each implement, and once chosen cannot be changed without the re-attunement process of the implement binder ability.</p>
+<h4 id="offensive-summon">Offensive Summon<a class="headerlink" href="#offensive-summon" title="Permanent link">¶</a></h4>
+<p><strong>Prerequisites</strong>: Summon Weapon</p>
+<p><strong>Benefit</strong>: You may summon your equipment in a way that turns them into a dangerous projectile. When using your summon weapon ability you may make a ranged attack roll against a foe within 30 feet. The foe takes the weapon damage plus his Psyche modifier in damage. For the purposes of interaction with feats and abilities the blade binder may treat this as the focused attack action. The blade binder may not use this with abilities that reduce the action cost of summon weapon below a standard action. The summoned weapon lasts the normal duration before disappearing after using this ability.</p>
+<h5 id="improved-offensive-summon">Improved Offensive Summon<a class="headerlink" href="#improved-offensive-summon" title="Permanent link">¶</a></h5>
+<p><strong>Prerequisites</strong>: Offensive Summon, Blade Binder 8th</p>
+<p><strong>Benefit</strong>: The blade binder may use the Offensive summon ability as a full-attack action. When using this ability the binder summons as many weapons up to the maximum he may make as part of the full attack, but only pays the ki point cost of the summoning for the first weapon summoned this way. Additional weapons summoned after the first immediately disappear. This ability may not be used with two-weapon fighting.</p>
+<h5 id="binders-mark">Binder’s Mark<a class="headerlink" href="#binders-mark" title="Permanent link">¶</a></h5>
+<p><strong>Prerequisites</strong>: Offensive Summon, Blade Binder 13th</p>
+<p><strong>Benefit</strong>: The binder learns to leave a trace of his power on his foes. Once per round when the blade binder succeeds on a attack roll against a foe using a summoned weapon he may spend a Ki point as an reaction to make a Resilience save attack against the foe he struck (1d20+ ½ MPB + Psyche modifier) the blade binder may add his summon weapon’s enhancement bonus to this save attack. If successful the target gains 2 marks, plus an additional mark per degree of success. If he fails by one degree or less he applies one mark to the target.</p>
+<p>As a standard action the blade binder may cause these marks to erupt, forcing weapons to be summoned from within the target, damaging them. When causing the marks to erupt the creature takes 1d10 + Psyche modifier damage per every mark on the target. All marks are removed from the target once they have erupted.</p>
+<h4 id="quartermaster">Quartermaster<a class="headerlink" href="#quartermaster" title="Permanent link">¶</a></h4>
+<p><strong>Prerequisites</strong>: Summon Weapon</p>
+<p><strong>Benefit</strong>: You may choose when summoning a weapon to make it a stable weapon capable of existing away from you longer than normal; these weapons now last 1 minute per blade binder level after leaving your possession, allowing you to create weaponry for your allies; weapons created with this ability cannot have blade improvements applied to them. Creatures can still detect the conjured, impermanent nature of the weaponry with a DC 10 Appraise or Profession(Blacksmith) check. The blade binder may spend an additional stamina when summoning this equipment to summon it directly within an ally’s hands within 30 feet + 5 feet per 4 blade binder levels. At 3rd level, the blade binder may use Ki in place of stamina when using this ability.</p>
+<h5 id="improved-quartermaster">Improved Quartermaster<a class="headerlink" href="#improved-quartermaster" title="Permanent link">¶</a></h5>
+<p><strong>Prerequisites</strong>: Quartermaster Specialization, Blade Binder 8th</p>
+<p><strong>Benefit</strong>: When making stable weapons with the quartermaster ability the blade bidner may apply a single blade improvement to the created weapons with a blade binder level requirement of 4 or lower.</p>
+<h4 id="telekinetic-orbit">Telekinetic Orbit<a class="headerlink" href="#telekinetic-orbit" title="Permanent link">¶</a></h4>
+<p><strong>Prerequisites</strong>: Summon Weapon</p>
+<p><strong>Benefit</strong>: The blade binder gains telekinetic aura with the telekinetic orbit talent as a natural spell using his class level as his BCB, his MPB as his SPB, and his Psyche as his CAM. You may cast this as a reaction on his turn, and may spend stamina in place spell points when using this. Unlike normal, the blade binder may choose to wield weapons within his orbit, but only as long as the items remain within his square; using his statistics as normal for making attack and damage rolls with such weapons. At 3rd level the blade binder may spend ki in place of stamina when using this ability. The blade binder may only use this orbit  with his summoned weapons and may summon his weapons directly into his orbit. At 5th level this natural spell gains the greater orbit talent and treats his reach as 5 feet longer for weapons wielded in his orbit.</p>
+<p><strong>Special</strong>: Shields in orbit do not provide their shield bonus to AC while in orbit and must be wielded directly by the blade binder to grant this benefit.</p>
+<h4 id="telekinetic-equipment">Telekinetic Equipment<a class="headerlink" href="#telekinetic-equipment" title="Permanent link">¶</a></h4>
+<p><strong>Prerequisites</strong>: Summon Weapon</p>
+<p><strong>Benefit</strong>: The blade binder gains telekinetic throw with the distant lift talent as a natural spell using his BAB as his BCB, his MPB as his SPB, and his Psyche as his CAM. The blade binder may spend stamina in place of spell points when using this, but reduces the spell point cost of the spell by 1 (minimum 0). The blade binder may only lift and throw weapons his summoned weapons, and may choose to throw a weapon with this as part of summoning it as long as he spends at least a standard action to do so. Attacks with this are still treated as attack actions, or full attacks when throwing more than one, for the purpose of interaction with feats and abilities. At 6th level the balde binder may summon a number of weapons up to the maximum he may throw with telekinetic throw, while also not exceeding his summon weapon limit, as part of a full-attack action with telekinetic throw; rather than the normal cost to summon the blade binder instead need only pay 2 ki points to use this ability.</p>
+<p>The blade binder is considered to have had a summoned weapon in his possession until the start of his next turn for the purpose of the weapon disappearing if he throws it with this ability, allowing him to continually re-throw the same weapon without requiring re-summoning.</p>
+<p><strong>Special</strong>: If the blade binder possesses the Telekinetic Orbit specialization he may wield weapons within the greater orbit range, not just weapons adjacent to himself. In addition he may choose to use his normal attributes or his Psyche modifier for attack and damage rolls for weapons wielded in his orbit. Weapons in his orbit are treated as having a reach equal to your own, calculated from the square the weapon occupies, for the purposes of making attacks of opportunity with such weapons.</p>
+<h5 id="improved-telekinetic-equipment">Improved Telekinetic Equipment<a class="headerlink" href="#improved-telekinetic-equipment" title="Permanent link">¶</a></h5>
+<p><strong>Prerequisites</strong>: Telekinetic Equipment Specialization, Blade Binder 8th</p>
+<p><strong>Benefit</strong>: In addition when taking the full attack action with his telekinetic equipment he may make one additional attack at his highest base attack bonus.</p>
+<p><strong>Special</strong>: If the blade binder is using Telekinetic Orbit, he gains a number of additional reactions per round equal to his Psyche modifier, but these additional reactions may only be spent on attacks of opportunity for weapons within his orbit.</p>
+<h2 id="table-binder-talents">Table - Binder Talents:<a class="headerlink" href="#table-binder-talents" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Prerequisite</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Armored Spirit</td>
+<td>Blade Spirit</td>
+<td>You may choose to summon your armor upon your blade spirit as part of summoning. This does not remove the limitation that the blade binder may only have a single suit of armor summoned at one time.</td>
+</tr>
+<tr>
+<td>Bonus Stance</td>
+<td>-</td>
+<td>The blade bidner gains an additional stance feat as a bonus feat.</td>
+</tr>
+<tr>
+<td>Condensed Armor Strike</td>
+<td>Condensed Elemental Armor</td>
+<td>The blade binder may cause his condensed elemental armor to strike at all creatures around him for 1 stamina as a standard action, causing blades to form and strike outwards. Within a 10 foot burst of the blade binder he makes a Physical(Agi) save attack against all creatures within the burst; striking out wildly with no care of friend or foe. On a success creatures within take 3d6 physical and 3d6 elemental damage. A failed Physical(Agi) attack deals half damage.</td>
+</tr>
+<tr>
+<td>Durable Summons</td>
+<td>Summoned Armor</td>
+<td>The binder’s summoned armor’s health pool improves to 20 points per binder level.</td>
+</tr>
+<tr>
+<td>Effortless Telekinesis</td>
+<td>Telekinetic Orbit, Blade Binder 10th</td>
+<td>The blade binder may treat incoming damage as half for the purposes of determining the DC of the concentration check to maintain telekinetic orbit. in addition the duration of his telekinetic orbit improves to 1 minute per BCB, and 1 hour per BCB if he spends a ki point.</td>
+</tr>
+<tr>
+<td>Greater Condensed Elemental Blade</td>
+<td>Condensed Elemental Blade, Blade Binder 12th</td>
+<td>The blade binder now only needs to wait 1 hour to recharge his condensed elemental blade, or may choose to spend an additional ki point to reduce the time to 1 minute.</td>
+</tr>
+<tr>
+<td>Greater Condensed Elemental Armor</td>
+<td>Condensed Elemental Armor</td>
+<td>The balde binder now only needs to wait 1 hour to use his condensed elemental armor ability again. The blade binder may use the condensed elemental armor ability again before the 1 hour time period is up by spending 1 additional ki point when using it, but is fatigued for 1 minute per round of the ability after it ends.</td>
+</tr>
+<tr>
+<td>Greater Telekinetic Equipment</td>
+<td>Telekinetic Equipment, Blade Binder 6th</td>
+<td>The blade binder's telekinetic throw natural spell gains the benefits of the telekinetic velocity talent, and the maximum size the blade binder may lift with telekinetic throw improves by 1 step.</td>
+</tr>
+<tr>
+<td>Expanded Element</td>
+<td>Elemental Shape, Blade Binder 4th</td>
+<td>The blade binder selects one additional element and may select it from any element not just the ones listed on the elemental shape specialization. When summoning his weapons he may now choose which element his weapon will be attuned to, but still is only able to choose one.</td>
+</tr>
+<tr>
+<td>Extra Armor Improvement</td>
+<td>Armor Improvement</td>
+<td>You gain an additional blade binder armor improvement that you do not already possess. The blade binder may select this talent an additional time for every 5 levels of blade binder he possesses.</td>
+</tr>
+<tr>
+<td>Extra Blade Improvement</td>
+<td>Blade Improvement</td>
+<td>You gain an additional blade binder blade improvement that you do not already possess. The blade binder may select this talent an additional time for every 5 levels of blade binder he possesses.</td>
+</tr>
+<tr>
+<td>Extra Combat Feat (Ex)</td>
+<td>-</td>
+<td>The blade binder gains a bonus combat feat that he meets the prerequisites for. The blade binder may select this talent an additional time for every 4 levels of blade binder he possesses.</td>
+</tr>
+<tr>
+<td>Extra Martial Feat (Ex)</td>
+<td>-</td>
+<td>The blade binder gains a bonus martial feat that he meets the prerequisites for. The blade binder may select this talent more than once. The first time, and every two times after the first the blade binder selects this ability, he gains 1 additional martial feat. Abilities with the same name from other martial classes count towards this progression (ie taking extra martial feat from fighter, and then extra martial feat from barbarian would not grant you 4 martial feat it would grant you 3, and 2 more the next time you take it on either class.)</td>
+</tr>
+<tr>
+<td>Floating Shield</td>
+<td>Telekinetic Orbit, Blade Binder 4th</td>
+<td>Shields wielded by telekinetic orbit grant their shield bonus to the blade binder, but only while in the blade binder's square.</td>
+</tr>
+<tr>
+<td>Improved Companion</td>
+<td>Blade Spirit Specialization</td>
+<td>You gain a single companion talent of your choice from the following list. You may decide to apply this to the companion at the time of summoning the companion. List: Altered Size, Variable Size, Avian Creature, Versatile Companion, Elemental Creature, Extra Limbs, Fortified Companion, Mount, Powerful Companion, Quick Companion, Sage Companion, Suave Companion, Superior Senses, Transformative, Willful Companion.</td>
+</tr>
+<tr>
+<td>Independent Lifeforce</td>
+<td>Blade Spirit</td>
+<td>The blade binder may choose to redirect damage his blade spirit suffers to himself. At 10th level the blade binder reduces this redirected damage by an amount equal to his Psyche modifier (minimum 1). Damage redirected in this way bypasses any resistance or damage reduction the blade binder possesses, nor may it be redirected to his armor.</td>
+</tr>
+<tr>
+<td>Instant Summons</td>
+<td>Quick Summons, Blade Binder 14th</td>
+<td>The blade binder may reduce the action required to use his summon weapon ability by an additional step (standard to a move, move to a reaction, reaction to a free). If done as a reaction this reaction must be used on the blade binder's turn.</td>
+</tr>
+<tr>
+<td>Legendary Summons</td>
+<td>Summon Weapon/Summon Armor, Blade Binder 18th</td>
+<td>The blade binder may spend an additional Ki point as part of summoning his weapons and armor to either grant them an additional +1 enhancement bonus, or one additional blade improvement. This may allow a weapon to go beyond the normal +5 cap to enhancement bonus.</td>
+</tr>
+<tr>
+<td>Lingering Condensed Elemental Blade</td>
+<td>Condensed Elemental Blade, Blade Binder 14th</td>
+<td>The blade binder’s condensed elemental blade now lasts 10 minutes per blade binder level.</td>
+</tr>
+<tr>
+<td>Master Summons</td>
+<td>Blade Binder 4th</td>
+<td>The blade binder may spend an additional Ki point as part of summoning his summoned weapons and summoned armor to grant them uncommon masterwork quality and may have any weapon or armor modifications the equipment would be eligible for applied (up to the maximum of the slots allowed by the masterwork quality). At 9th MPB and every 5 thereafter the blade binder’s equipment may be created at an additional masterwork quality higher.  If the blade binder possesses the enhancer binder specialization he may apply these benefits to the enhanced item.</td>
+</tr>
+<tr>
+<td>Prehensile</td>
+<td>Condensed Elemental Blade</td>
+<td>While using the condensed elemental blade, you learn to allow your weapon to weave and snake around. You may use this weapon to attempt trip, grapple and reposition combat maneuvers granting any bonuses from the weapon to the combat maneuver, as well as ignoring any cover bonuses a creature may have (besides total cover). In addition when attempting this combat maneuver you may choose to cause the raw elemental damage and metal to damage the foe dealing just the weapon’s damage dice as well as 1d6 elemental damage to the target on a successful combat maneuver.</td>
+</tr>
+<tr>
+<td>Quick Summons</td>
+<td>Blade Binder 6th</td>
+<td>The blade binder may reduce the action required to use his summon weapon ability by one step (standard to a move, move to a reaction, reaction to a free). If done as a reaction this reaction must be used on the blade binder's turn.</td>
+</tr>
+<tr>
+<td>Restore Armor</td>
+<td>Summon Armor, Ki Pool</td>
+<td>The blade binder may spend 1 Ki point as a standard action to restore 1d6+MPB points of health to his armor’s health pool. If his armor’s health pool is 0 he must spend 2 ki points to instead restore it to 1, then may begin restoring it as normal with additional uses of this ability.</td>
+</tr>
+<tr>
+<td>Returning Blade</td>
+<td>Offensive Summon</td>
+<td>The blade binder may spend a move action to call any weapon he has summoned to him within 30 feet. The blade binder may spend an additional ki point as part of offensive summon to cause the blade to automatically return to his hand after the offensive summon attack resolves.</td>
+</tr>
+<tr>
+<td>Telekinetic Reach</td>
+<td>Telekinetic Orbit, Blade Binder 8th</td>
+<td>The maximum radius of your telekinetic orbit's greater orbit improves by 5 feet plus 5 feet per 3 Blade binder levels.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="table-blade-improvements">Table - Blade Improvements:<a class="headerlink" href="#table-blade-improvements" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Prerequisite</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Additional Modification</td>
+<td>Blade Binder 4th, Master Summons</td>
+<td>The blade binder's masterwork versions of their equipment gain 1 additional modification slot. This blade improvement may be applied up to 3 times.</td>
+</tr>
+<tr>
+<td>Carnage</td>
+<td>Binder 11th</td>
+<td>The blade binder may improve the crit multiplier of his weapon by 1.</td>
+</tr>
+<tr>
+<td>Force Weapons</td>
+<td></td>
+<td>The binder learns to mold his summoned weapon energies into weapons of pure force. Rather than summoning normal weapons his weapons take shape around himself, granting the enhancement bonus and any blade improvements to all unarmed strikes or natural weapons he possesses. The blade binder may summon additional weapons with force weapon blade improvements to improve additional unarmed strikes or natural weapons. Special: May not be used with Condensed Elemental Blade specialization.</td>
+</tr>
+<tr>
+<td>Weightless Weapons</td>
+<td>Binder 5th</td>
+<td>The weight and density of the blade binder’s summoned weapons is reduced, allowing him to summon and wield weapons 1 size category larger than himself without penalty.  At 10th level, If the blade binder has telekinetic weapons or telekinetic orbit he may summon and wield weapons up to 2 size categories larger.</td>
+</tr>
+<tr>
+<td>Bane</td>
+<td>Blade Binder 7th</td>
+<td>You spend 1 Ki point to apply the bane special ability to your summoned weapon, choosing the type of creature as part of the summoning.</td>
+</tr>
+<tr>
+<td>Brilliant Energy</td>
+<td>Blade Binder 11th; Telekinetic Equipment</td>
+<td>You may apply the brilliant energy special ability to your summoned weapon. The blade binder may select and use this blade improvement with the elemental shape specialization, but only if he has selected the expanded element binder talent and is using the light element. This blade improvement is treated as 2 blade improvements for the purpose of how many blade improvements may be applied to a weapon.</td>
+</tr>
+<tr>
+<td>Elemental</td>
+<td>-</td>
+<td>The blade binder may apply elemental fury to his weapon. If he has the elemental shape specialization it must match the element of his specialization. At 7th level he may instead apply improved elemental fury.</td>
+</tr>
+<tr>
+<td>Extra Spell</td>
+<td>Implement Binder</td>
+<td>The blade binder may apply the extra spell special ability to his summoned implement. The blade binder choses the spell when selecting this improvement, he may change this selection as part of the re-attuning process of implement binder. The blade binder may select this blade improvement more than once, each time selecting a new spell.</td>
+</tr>
+<tr>
+<td>Extra Talent</td>
+<td>Implement Binder</td>
+<td>The blade binder may apply the extra talent special ability to his summoned implement. This follows the normal restrictions of extra talent. The blade binder choses the talent when selecting this improvement, he may change this selection as part of the re-attuning process of implement binder. The blade binder may select this blade improvement more than once, each time selecting a new talent.</td>
+</tr>
+<tr>
+<td>Ghost Touch</td>
+<td>-</td>
+<td>The blade binder may apply the ghost touch special ability to his weapon.</td>
+</tr>
+<tr>
+<td>Sharding</td>
+<td>-</td>
+<td>The blade binder may apply the sharding special ability to his weapon.</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>Blade Binder 12th</td>
+<td>The binder may apply the speed special ability to his weapon. This blade improvement is treated as 2 blade improvements for the purpose of how many blade improvements may be applied to a weapon.</td>
+</tr>
+<tr>
+<td>Vampiric</td>
+<td>-</td>
+<td>The binder may apply the vampiric special ability to his weapon. At 7th level he may instead apply the greater vampiric special ability.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="table-armor-improvements">Table - Armor Improvements:<a class="headerlink" href="#table-armor-improvements" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Prerequisite</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Energy Resistance</td>
+<td>-</td>
+<td>The blade binder may apply the energy resistance special ability to his armor. If the blade binder has the Condensed Elemental Armor specialization it must be of a type of his chosen element or an element his chosen element is strong against. At 7th level the blade binder may instead apply improved Energy Resistance. At 11th level the blade binder may instead apply Greater Energy Resistance. The greater energy resistance armor improvement is treated as 2 armor improvements for the purpose of how many armor improvements may be applied to a suit of armor.</td>
+</tr>
+<tr>
+<td>Flying</td>
+<td>Binder 6th</td>
+<td>The binder may cause his armor to either sprout wings or simply float, granting him a 20 foot fly speed (average maneuverability). At 10th level the fly speed improves to 30 feet with good maneuverability. At 15th level the fly speed improves to 40 feet with perfect maneuverability. If the creature already has a fly speed they instead gain a 5 foot bonus to their existing fly speed and improve their maneuverability by 1 step. At 10th and 15th level he gains an additional +5 bonus to his existing fly speed and improves existing maneuverability by 1 step.</td>
+</tr>
+<tr>
+<td>Force Armor</td>
+<td>-</td>
+<td>When applying this armor improvement the blade binder summons an armor of force. This armor of force grants a +1 armor bonus and gains enhancement bonus as normal armor. This armor has no strength rating requirement nor counts as wearing armor for the purposes of abilities that require one to not be wearing armor.</td>
+</tr>
+<tr>
+<td>Fortification</td>
+<td>-</td>
+<td>The blade binder may apply the fortification special ability to his armor. At 7th level the blade binder may instead apply Improved Fortification. At 13th level the blade binder may instead apply Heavy Fortification. When applying heavy fortification this armor improvement is treated as 2 armor improvements for the purpose of how many armor improvements may be applied to a suit of armor.</td>
+</tr>
+<tr>
+<td>Ghost Touch</td>
+<td>-</td>
+<td>The blade binder may apply the ghost touch special ability to his armor.</td>
+</tr>
+<tr>
+<td>Guardian</td>
+<td>-</td>
+<td>The blade binder may apply the guardian special ability to his armor.</td>
+</tr>
+<tr>
+<td>Locomotive</td>
+<td>-</td>
+<td>The blade binder may cause his armor to grant a +20 foot base speed or 30 feet swim speed when summoned.</td>
+</tr>
+<tr>
+<td>Lifesurge</td>
+<td>-</td>
+<td>The blade binder may apply the lifesurge special ability to his armor.</td>
+</tr>
+<tr>
+<td>Reflexive Strike</td>
+<td>Condensed Elemental Armor</td>
+<td>While wearing the condensed elemental armor the blade binder may spend a reaction when attacked in melee to make a single Physical(Agi) save attack. Success causes the creature to take 1d6 + the blade binder’s Psyche modifier damage of the armor’s element.</td>
+</tr>
+<tr>
+<td>Stone Touch</td>
+<td>-</td>
+<td>The blade binder may cause his armor to grant a 30 foot climb speed or 15 foot burrow speed when summoned. This armor improvement is treated as 2 armor improvements for the purpose of how many armor improvements may be applied to a suit of armor.</td>
+</tr>
+<tr>
+<td>Titanic</td>
+<td>-</td>
+<td>The blade binder may apply the titanic special ability to his armor.</td>
+</tr>
+</tbody>
+</table>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.fc8c2696.min.js"></script>
+<script src="../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+<script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+<script src="../../javascripts/tablesort.js"></script>
+</body>
+</html>
