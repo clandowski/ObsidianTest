@@ -10,8 +10,7 @@ share: true
 ---
 
 ## Class Details
-	test
-Hit Die:  <% tp.frontmatter["HitDie"] %>
+Hit Die:  `= this.HitDie`
 Type: `= this.Type`
 Skill Ranks Per Level: `= this.Skills` + Int modifier
 
